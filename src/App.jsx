@@ -4,9 +4,10 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="bg-slate-400 h-full flex flex-col w-full items-center justify-center">
+    <div className=" h-full flex flex-col w-full items-center justify-center">
       {/* <Navbar/> */}
       <Hero />
+      <div className="bg-black w-full h-screen"></div>
     </div>
   );
 };

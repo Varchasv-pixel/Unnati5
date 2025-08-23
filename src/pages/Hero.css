@@ -1,0 +1,6 @@
+.bganimation{
+    background-image: url('/bgImage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
