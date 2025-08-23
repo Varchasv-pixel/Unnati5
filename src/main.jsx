@@ -7,11 +7,6 @@ import React from "react";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Navbar />
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" index={true} element={<App />} />
-      </Routes>
-    </BrowserRouter>
+    <App/>
   </React.StrictMode>
 );
