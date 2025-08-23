@@ -22,7 +22,6 @@ function Hero() {
       width: '100%',
       scrollTrigger:{
         trigger: divRef.current,
-        markers: true,
         scrub: 3,
         start: 'top 30%',
         end: '+=800',
@@ -52,7 +51,7 @@ function Hero() {
   ]
 
   return (
-    <div className='flex bganimation flex-col justify-center items-center gap-y-20 sm:mt-12 lg:mt-70 lg:pt-37   pb-8 ' ref={divRef} style={{borderTopLeftRadius: '100%', borderTopRightRadius: '100%', width: '85%'}}>
+    <div className='flex bganimation flex-col justify-center items-center gap-y-20 mt-21 pt-18 md:mt-40 md:pt-25 lg:mt-70 lg:pt-37   pb-8 ' ref={divRef} style={{borderTopLeftRadius: '100%', borderTopRightRadius: '100%', width: '85%'}}>
       <div className='flex flex-col justify-center items-center text-center text-white gap-y-8'>
         <p className='font-family-primary font-extrabold text-[clamp(1.5rem,6.1vw,4rem)] '>The all-in-one <br /> workspace you'll love</p>
         <p className='leading-0 text-[1rem] '>Think it. Plan it. Build it. while switching apps</p>
