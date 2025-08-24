@@ -11,6 +11,7 @@ const App = () => {
       <Hero />
       <Brands/>
       <Comments/>
+      <div className="h-500"></div>
     </div>
   );
 };

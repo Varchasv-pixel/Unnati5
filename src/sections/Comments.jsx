@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import CommentCard from '../ui/CommentCard'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function Comments() {
   const testimonials = [
@@ -68,6 +71,85 @@ function Comments() {
   const desktopColumn2 = testimonials.slice(3, 6)
   const desktopColumn3 = [testimonials[6], testimonials[7], testimonials[0]] 
 
+  const div1Ref = useRef(null);
+  const div2Ref = useRef(null);
+  const div3Ref = useRef(null);
+
+  useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger); 
+
+    const cards = gsap.utils.toArray('.comment-card1');
+
+    cards.forEach(
+      (card)=>{
+        gsap.from(card, {
+          opacity: 0,
+          y:100, 
+          scrollTrigger: {
+            trigger: card,
+            
+            scrub: 1, 
+            start: 'top 90%', 
+            end: 'center 70%', 
+          },
+        });
+      }
+    );
+  },{
+    scope: div1Ref, 
+       
+  });
+
+    useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger); 
+
+    const cards = gsap.utils.toArray('.comment-card2');
+
+    cards.forEach(
+      (card)=>{
+        gsap.from(card, {
+          opacity: 0,
+          y: 100, 
+          scrollTrigger: {
+            trigger: card,
+            
+            scrub: 1,
+            start: 'top 90%', 
+            end: 'center 70%', 
+          },
+        });
+      }
+    );
+  },{
+    scope: div2Ref, 
+       
+  });
+
+    useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger); 
+
+    const cards = gsap.utils.toArray('.comment-card3');
+
+    cards.forEach(
+      (card)=>{
+        gsap.from(card, {
+          opacity: 0,
+          y: 100, 
+          scrollTrigger: {
+            trigger: card,
+            
+            scrub: 2, 
+            start: 'top 90%', 
+            end: 'center 70%', 
+          },
+        });
+      }
+    );
+  },{
+    scope: div3Ref, 
+       
+  });
+
   return (
     <div className='flex flex-col py-16 px-4 md:gap-y-18 max-w-screen'>
       <div className='flex flex-col text-left gap-y-3 w-[90vw] md:px-20 mb-12'>
@@ -125,21 +207,24 @@ function Comments() {
 
       <div className='block max-w-6xl mx-auto'>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
-          <div className='space-y-4'>
+          <div className='space-y-4' ref={div1Ref}>
             {desktopColumn1.map((testimonial, index) => (
-              <CommentCard
-                key={`desktop-col1-${index}`}
-                profileImage={testimonial.profileImage}
-                name={testimonial.name}
-                handle={testimonial.handle}
-                verifiedIcon={testimonial.verifiedIcon}
-                comment={testimonial.comment}
-              />
+              <div key={index} className='comment-card1'>
+                <CommentCard
+                  key={`desktop-col1-${index}`}
+                  profileImage={testimonial.profileImage}
+                  name={testimonial.name}
+                  handle={testimonial.handle}
+                  verifiedIcon={testimonial.verifiedIcon}
+                  comment={testimonial.comment}
+                />
+              </div>
             ))}
           </div>
           
-          <div className='space-y-4 -mt-24'>
+          <div className='space-y-4 -mt-24 hidden md:block' ref={div2Ref}>
             {desktopColumn2.map((testimonial, index) => (
+              <div key={index} className='comment-card2'>
               <CommentCard
                 key={`desktop-col2-${index}`}
                 profileImage={testimonial.profileImage}
@@ -148,11 +233,13 @@ function Comments() {
                 verifiedIcon={testimonial.verifiedIcon}
                 comment={testimonial.comment}
               />
+              </div>
             ))}
           </div>
           
-          <div className='space-y-4 -mt-42 hidden lg:block'>
+          <div className='space-y-4 -mt-42 hidden lg:block' ref={div3Ref}>
             {desktopColumn3.map((testimonial, index) => (
+              <div key={index} className='comment-card3'>
               <CommentCard
                 key={`desktop-col3-${index}`}
                 profileImage={testimonial.profileImage}
@@ -161,6 +248,7 @@ function Comments() {
                 verifiedIcon={testimonial.verifiedIcon}
                 comment={testimonial.comment}
               />
+              </div>
             ))}
           </div>
         </div>
