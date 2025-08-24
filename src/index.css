@@ -1,97 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
-
 @font-face {
-    font-family: 'PP Agrandir';
-    src: url(../public/fonts/primary/PPAgrandir-Regular.otf) format('opentype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-Regular.otf') format('opentype');
-  font-weight: 400; 
+  font-family: 'PPAgrandir';
+  src: url('/fonts/PPAgrandir-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-ThinItalic.otf') format('opentype');
-  font-weight: 100; 
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-GrandLight.otf') format('opentype');
-  font-weight: 300; 
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-GrandHeavy.otf') format('opentype');
-  font-weight: 800; 
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-NarrowRegular.otf') format('opentype');
-  font-weight: 400; 
-  font-style: normal;
-  font-stretch: condensed; 
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-TightRegular.otf') format('opentype');
-  font-weight: 400; 
-  font-style: normal;
-  font-stretch: condensed; 
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-WideLight.otf') format('opentype');
-  font-weight: 300; 
-  font-style: normal;
-  font-stretch: expanded;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Agrandir';
-  src: url('./fonts/PPAgrandir-WideBlackItalic.otf') format('opentype');
-  font-weight: 900; 
-  font-style: italic;
-  font-stretch: expanded;
-  font-display: swap;
-}
 
 
-@font-face {
-  font-family: 'PP Agrandir Text';
-  src: url('./fonts/PPAgrandirText-Bold.otf') format('opentype');
-  font-weight: 700; 
-  font-style: normal;
-  font-display: swap;
+  @theme {
+    --font-family-primary: 'PPAgrandir', ui-sans-serif, system-ui, sans-serif;
 
-
-}
-
-@theme {
-  --font-family-primary: 'PP Agrandir', ui-sans-serif, system-ui, sans-serif;
-  --font-family-primary2: 'PP Agrandir Text', ui-sans-serif, system-ui, sans-serif;
-}
+  }
 
 body{
     font-family: "Poppins", sans-serif;
