@@ -69,14 +69,14 @@ function Comments() {
   const desktopColumn3 = [testimonials[6], testimonials[7], testimonials[0]] 
 
   return (
-    <div className='flex flex-col py-16 px-4 md:gap-y-18'>
+    <div className='flex flex-col py-16 px-4 md:gap-y-18 max-w-screen'>
       <div className='flex flex-col text-left gap-y-3 w-[90vw] md:px-20 mb-12'>
         <p className='font-primary font-bold text-nowrap  text-[#250835] text-[clamp(50px,13.5vw,11.25rem)] leading-[95%]'>Great minds <br /> think here</p>
         <p className='font-secondary ml-3 md:ml-24 lg:ml-41 text-[1.5rem] text-[#6a5b72] font-medium'>Winning teams run <br /> on Whimsical.</p>  
       </div>
       
       {/* mobile wala */}
-      <div className='block md:hidden max-w-sm mx-auto space-y-4'>
+      {/* <div className='block md:hidden max-w-sm mx-auto space-y-4'>
         {mobileTestimonials.map((testimonial, index) => (
           <CommentCard
             key={`mobile-${index}`}
@@ -87,10 +87,10 @@ function Comments() {
             comment={testimonial.comment}
           />
         ))}
-      </div>
+      </div> */}
 
         {/* bich wala */}
-      <div className='hidden md:block lg:hidden max-w-4xl mx-auto'>
+      {/* <div className='hidden md:block lg:hidden max-w-4xl mx-auto'>
         <div className='grid grid-cols-2 gap-6'>
           <div className='space-y-4'>
             {tabletColumn1.map((testimonial, index) => (
@@ -118,12 +118,13 @@ function Comments() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* laptop wala */}
+      {/* sabre ek me kardiye hehehe */}
 
-      <div className='hidden lg:block max-w-6xl mx-auto'>
-        <div className='grid grid-cols-3 gap-6'>
+      <div className='block max-w-6xl mx-auto'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
           <div className='space-y-4'>
             {desktopColumn1.map((testimonial, index) => (
               <CommentCard
@@ -150,7 +151,7 @@ function Comments() {
             ))}
           </div>
           
-          <div className='space-y-4 -mt-42'>
+          <div className='space-y-4 -mt-42 hidden lg:block'>
             {desktopColumn3.map((testimonial, index) => (
               <CommentCard
                 key={`desktop-col3-${index}`}
