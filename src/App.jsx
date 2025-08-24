@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./pages/Hero";
 import Navbar from "./components/Navbar";
 import Brands from "./sections/Brands";
+import Comments from "./sections/Comments";
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       {/* <Navbar/> */}
       <Hero />
       <Brands/>
-      <div className="bg-black w-full h-screen"></div>
+      <Comments/>
     </div>
   );
 };
