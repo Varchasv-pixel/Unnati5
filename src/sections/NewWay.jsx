@@ -102,7 +102,7 @@ function NewWay() {
             {/* Main morphing element */}
             <div 
                 ref={togrowRef} 
-                className='relative growbg flex flex-col items-center justify-center border-0 shadow-2xl overflow-hidden w-[300px] md:w-[370px] h-[70vw] md:h-[85vw]'
+                className='relative growbg flex flex-col items-center justify-center border-0 shadow-2xl overflow-hidden w-[300px] md:w-[370px] h-[65vh] md:h-[85vh]'
                 style={{
                     borderTopLeftRadius: '350px',
                     borderTopRightRadius: '350px',
