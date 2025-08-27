@@ -1,0 +1,13 @@
+.bgstill {
+  background-image: url("./stillbg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.faqbg{
+      background-image: url("./faqbg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
