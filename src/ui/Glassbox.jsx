@@ -18,7 +18,6 @@ function Glassbox({
       onClick={onClick}
     >
       <div className='flex items-center gap-2 mb-2'>
-        {/* Icon */}
         {icon && (
           <div className={`w-4 h-4 flex-shrink-0 transition-colors duration-300 ${
             isActive ? 'text-[rgb(80,230,203)]' : 'text-[#d6d3d3aa]'
@@ -41,7 +40,6 @@ function Glassbox({
         </p>
       </div>
       
-      {/* Progress bar */}
       <div className={`w-full h-1 rounded-full overflow-hidden ${
         isActive ? 'bg-gray-200' : 'bg-[rgba(43,43,44,0.24)]'
       }`}>

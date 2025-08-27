@@ -44,38 +44,32 @@ function Hero() {
     },
   ]
 
-  // Auto-rotate functionality with proper timing
   useEffect(() => {
     const startAutoRotate = () => {
-      // Clear existing intervals
       if (intervalRef.current) clearInterval(intervalRef.current);
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
 
-      // Reset progress
       setProgress(0);
 
-      // Progress bar animation - more precise calculation
-      const progressDuration = 4000; // 4 seconds
-      const updateInterval = 50; // Update every 50ms
-      const progressIncrement = (100 / progressDuration) * updateInterval; // Calculate exact increment
+      const progressDuration = 4000;
+      const updateInterval = 50;
+      const progressIncrement = (100 / progressDuration) * updateInterval;
 
       progressIntervalRef.current = setInterval(() => {
         setProgress(prev => {
           const newProgress = prev + progressIncrement;
           if (newProgress >= 100) {
-            return 100; // Cap at 100, don't reset here
+            return 100;
           }
           return newProgress;
         });
       }, updateInterval);
 
-      // Tab rotation - exactly 4 seconds
       intervalRef.current = setInterval(() => {
         setActiveIndex(prev => {
           const nextIndex = (prev + 1) % tabs.length;
           return nextIndex;
         });
-        // Reset progress for new tab
         setProgress(0);
       }, progressDuration);
     };
@@ -88,7 +82,6 @@ function Hero() {
     };
   }, [tabs.length]);
 
-  // Auto-center active box in mobile view
   useEffect(() => {
     if (mobileContainerRef.current && window.innerWidth < 768) {
       const container = mobileContainerRef.current;
@@ -99,7 +92,6 @@ function Hero() {
         const elementWidth = activeElement.offsetWidth;
         const elementOffsetLeft = activeElement.offsetLeft;
         
-        // Calculate scroll position to center the active element
         const scrollLeft = elementOffsetLeft - (containerWidth / 2) + (elementWidth / 2);
         
         container.scrollTo({
@@ -110,18 +102,15 @@ function Hero() {
     }
   }, [activeIndex]);
 
-  // Handle manual tab selection
   const handleTabClick = (index) => {
-    if (index === activeIndex) return; // Don't restart if clicking same tab
+    if (index === activeIndex) return;
 
     setActiveIndex(index);
     setProgress(0);
     
-    // Clear existing intervals
     if (intervalRef.current) clearInterval(intervalRef.current);
     if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
     
-    // Restart auto-rotate after a short delay
     setTimeout(() => {
       const progressDuration = 4000;
       const updateInterval = 50;
@@ -173,9 +162,7 @@ function Hero() {
       </div>
       
       <div className='flex flex-col justify-center w-full items-center gap-6'>
-        {/* Glass boxes - Responsive layout */}
         <div className='w-full px-4'>
-          {/* Desktop: Centered flex */}
           <div className='hidden md:flex justify-center items-center py-4'>
             <div 
               ref={containerRef}
@@ -202,7 +189,6 @@ function Hero() {
             </div>
           </div>
 
-          {/* Mobile: Auto-centering scrollable */}
           <div className='md:hidden w-full'>
             <div 
               ref={mobileContainerRef}
@@ -235,14 +221,12 @@ function Hero() {
           </div>
         </div>
 
-        {/* Active screen display */}
         <div className='w-full flex justify-center items-center px-2'>
           <div className='transition-all duration-500 ease-in-out max-w-full'>
             {tabs[activeIndex]?.screen || <GlassScreen1 />}
           </div>
         </div>
 
-        {/* Progress indicators */}
         <div className='flex gap-2 mt-4'>
           {tabs.map((_, index) => (
             <button
