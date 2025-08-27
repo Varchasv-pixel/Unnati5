@@ -8,6 +8,11 @@ import Rule from "./sections/Rule";
 import Faq from "./sections/Faq";
 import Trustedbymillions from "./sections/Trustedbymillions";
 import NewWay from "./sections/NewWay";
+import Footer from "./sections/Footer";
+import Days from "./sections/Days";
+
+
+
 
 const App = () => {
   return (
@@ -21,6 +26,8 @@ const App = () => {
       <Rule/>
       <Faq/>
       <div className="h-500"></div>
+      <Days/>
+      <Footer/>
     </div>
   );
 };
