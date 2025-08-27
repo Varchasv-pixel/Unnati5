@@ -6,13 +6,16 @@ import Comments from "./sections/Comments";
 import Gallery from "./sections/Gallery";
 import Rule from "./sections/Rule";
 import Faq from "./sections/Faq";
+import Trustedbymillions from "./sections/Trustedbymillions";
+import NewWay from "./sections/NewWay";
 
 const App = () => {
   return (
     <div className=" h-full flex flex-col w-full items-center ">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero />
-      <Brands/>
+      <Trustedbymillions/>
+      <NewWay/>
       <Comments/>
       <Gallery/>
       <Rule/>
