@@ -11,7 +11,7 @@ import NewWay from "./sections/NewWay";
 
 const App = () => {
   return (
-    <div className=" h-full flex flex-col w-full items-center ">
+    <div className=" h-full flex flex-col w-full items-center overflow-x-hidden">
       {/* <Navbar/> */}
       <Hero />
       <Trustedbymillions/>
