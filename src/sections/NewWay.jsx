@@ -96,14 +96,14 @@ function NewWay() {
                     </h2>
                 </div>
                 
-                <div className='new-content absolute inset-0 flex flex-col lg:flex-row items-start  md:justify-around md:items-center justify-center text-center z-10 opacity-0 px-12'>
-                    <div className='md:flex-1   flex items-center justify-center'>
-                        <h1 className='main-title text-left text-5xl md:text-7xl   font-bold text-gray-800 mb-8 '>
+                <div className='new-content absolute inset-0 flex flex-col lg:flex-row items-start  sm:justify-center lg:justify-center lg:items-center sm:gap-x-26 sm:items-center justify-center text-center z-10 opacity-0 px-12'>
+                    <div className='   flex items-center justify-center'>
+                        <h1 className='main-title text-left text-5xl md:text-7xl   font-bold text-gray-800 mb-8 md:mb-0'>
                             The <br /> Unnati <br /> Way
                         </h1>
                     </div>
                     
-                    <div className='md:flex-1 space-y-2'>
+                    <div className=' space-y-2'>
                         {
                             newwaypoints.map((point, index) => {
                                 return (
