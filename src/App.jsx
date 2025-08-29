@@ -25,7 +25,6 @@ const App = () => {
       <Gallery/>
       <Rule/>
       <Faq/>
-      <div className="h-500"></div>
       <Days/>
       <Footer/>
     </div>
