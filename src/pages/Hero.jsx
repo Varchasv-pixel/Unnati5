@@ -7,6 +7,7 @@ import './Hero.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react';
+import { Link } from 'react-router-dom'
 
 function Hero() {
   const divRef = useRef(null);
@@ -152,7 +153,7 @@ function Hero() {
         <p className='font-primary font-bold text-[clamp(1.5rem,6.1vw,4rem)]'>The all-in-one <br /> workspace you'll love</p>
         <p className='leading-0 text-[1rem]'>Think it. Plan it. Build it. without switching apps</p>
         
-        <Primarybtn/>
+        <Link to={'/form'}><Primarybtn/></Link>
       </div>
       
       <div className='flex flex-col justify-center w-full items-center gap-6'>
