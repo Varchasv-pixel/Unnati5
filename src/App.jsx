@@ -20,8 +20,6 @@ const App = () => {
     <div className=" h-full flex flex-col w-full items-center overflow-x-hidden">
       {/* <Navbar/> */}
       <Hero />
-      <Trustedbymillions/>
-      <NewWay/>
       <Prizes/>
       <Comments/>
       <Gallery/>
