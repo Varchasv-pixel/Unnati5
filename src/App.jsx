@@ -10,6 +10,7 @@ import Trustedbymillions from "./sections/Trustedbymillions";
 import NewWay from "./sections/NewWay";
 import Footer from "./sections/Footer";
 import Days from "./sections/Days";
+import Prizes from "./sections/Prizes";
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
       <Hero />
       <Trustedbymillions/>
       <NewWay/>
+      <Prizes/>
       <Comments/>
       <Gallery/>
       <Rule/>

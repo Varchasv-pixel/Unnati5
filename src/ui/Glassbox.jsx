@@ -6,7 +6,10 @@ function Glassbox({
   isActive = false, 
   progress = 0, 
   onClick,
-  icon
+  icon,
+  date = "TBD",
+  time = "TBD", 
+  venue = "TBD"
 }) {
   return (
     <div 
@@ -17,7 +20,7 @@ function Glassbox({
       }`}
       onClick={onClick}
     >
-      <div className='flex items-center gap-2 mb-2'>
+      <div className='flex items-center gap-2 mb-1'>
         {icon && (
           <div className={`w-4 h-4 flex-shrink-0 transition-colors duration-300 ${
             isActive ? 'text-[rgb(80,230,203)]' : 'text-[#d6d3d3aa]'
@@ -25,11 +28,25 @@ function Glassbox({
             {icon}
           </div>
         )}
-        <p className={`text-sm font-medium truncate ${
+        <p className={`text-sm pt-2 font-medium truncate ${
           isActive ? 'text-black' : 'text-[#d6d3d3aa]'
         }`}>
           {title}
         </p>
+      </div>
+      
+      <div className='mb-3 mt-2 space-y-1'>
+        <div className={`text-xs ${
+          isActive ? 'text-gray-600' : 'text-[#d6d3d3aa]'
+        }`}>
+          <div className='flex justify-between items-center'>
+            <span>Date: {date}</span>
+            <span>Time: {time}</span>
+          </div>
+          <div>
+            <span>Venue: {venue}</span>
+          </div>
+        </div>
       </div>
       
       <div className='mb-3 flex-1'>

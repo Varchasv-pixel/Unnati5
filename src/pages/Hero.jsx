@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Primarybtn from '../ui/Primarybtn'
-import { GlassWater, FolderOpen, FileText, BarChart3, Users } from 'lucide-react'
+import { GlassWater, FolderOpen, FileText, BarChart3, Users, Swords } from 'lucide-react'
 import Glassbox from '../ui/Glassbox'
 import GlassScreen1 from '../ui/GlassScreen1'
 import './Hero.css'
@@ -19,28 +19,22 @@ function Hero() {
 
   const tabs = [
     {
-      title: "Projects",
-      description: "An integrated project spaces for tasks, docs, and community.",
-      icon: <FolderOpen />,
+      title: "Round 1: Brand Battle",
+      description: "Two rival brands. One stage. One winner.",
+      icon: <Swords />,
       screen: <GlassScreen1 variant="projects" />
     },
     {
-      title: "Documents",
-      description: "Smart document management with real-time collaboration.",
-      icon: <FileText />,
+      title: "Round 1: Brand Battle",
+      description: "Pitch, compare, and roast your way to victory.",
+      icon: <Swords />,
       screen: <GlassScreen1 variant="documents" />
     },
     {
-      title: "Analytics",
-      description: "Powerful insights and analytics for your workspace.",
+      title: "Round 2: CEO in Trouble",
+      description: "Think like a CEO, solve real challenges.",
       icon: <BarChart3 />,
       screen: <GlassScreen1 variant="analytics" />
-    },
-    {
-      title: "Team",
-      description: "Seamless team collaboration and communication tools.",
-      icon: <Users />,
-      screen: <GlassScreen1 variant="team" />
     },
   ]
 

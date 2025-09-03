@@ -7,12 +7,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Trustedbymillions() {
   const bulletPoints = [
-    "Time wasted switching between appps",
-    "Scattered conversations and decisions",
-    "Can't find important info or files",
-    "Too many notifications in too many places",
-    "Work feels chaotic and unfocused",
-    "Playing for many tools drains your budget",
+    "Stay stuck in routine thinking",
+    "Miss exposure to real challenges",
+    "No stage to showcase skills",
+    "Limited peer-to-peer learning  ",
+    "Lose chance to stand out",
+    "Miss leadership & teamwork growth",
   ];
 
   const imageRefs = useRef([]);
@@ -145,9 +145,9 @@ useEffect(() => {
 
       <div className="relative z-0 flex flex-col items-center justify-center px-16 gap-5 mt-40">
         <h1 className="text-3xl md:text-5xl font-bold text-center">
-          The old way of
+          Life in the Usual
           <br />
-          working
+          College Routine:
         </h1>
         <ul className="md:text-base text-[13px] text-nowrap flex flex-col gap-2">
           {bulletPoints.map((text, i) => ( 

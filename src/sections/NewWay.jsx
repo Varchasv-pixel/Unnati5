@@ -8,11 +8,11 @@ function NewWay() {
 
     const newwaypoints = [
         
-        {title : 'Cross-platform accessibility'},
-        {title : 'Enterprise-grade security'},
-        {title : 'Enterprise-grade security'},
-        {title : 'Enterprise-grade security'},
-        {title : 'Enterprise-grade security'},
+        {title : 'Think like a CEO'},
+        {title : 'Gain practical problem-solving skills'},
+        {title : 'Face real startup-style challenges'},
+        {title : 'Build confidence on stage'},
+        {title : 'Earn recognition, rewards & growth'},
     ]
 
     const togrowRef = useRef(null);
@@ -99,7 +99,7 @@ function NewWay() {
                 <div className='new-content absolute inset-0 flex flex-col lg:flex-row items-start  sm:justify-center lg:justify-center lg:items-center sm:gap-x-26 sm:items-center justify-center text-center z-10 opacity-0 px-12'>
                     <div className='   flex items-center justify-center'>
                         <h1 className='main-title text-left text-5xl md:text-7xl   font-bold text-gray-800 mb-8 md:mb-0'>
-                            The <br /> Unnati <br /> Way
+                            Life When You <br /> Participate in <br /> UNNATI
                         </h1>
                     </div>
                     
