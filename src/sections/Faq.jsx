@@ -14,24 +14,34 @@
 
       const faqs = [
         {
-          question: "What is Whimsical and how does it work?",
-          answer: "Whimsical is a collaborative workspace for thinking and planning. It helps teams create flowcharts, wireframes, mind maps, and more to visualize ideas and processes."
+          question:" What’s so special about UNNATI 5.0?",
+          answer: "You get the chance to compete with the best innovators of AIT in a thrilling 48-hour event packed with real-world problem statements. Add prizes, goodies, swags, and endless memories… now that’s special!"
+
         },
         {
-          question: "Can I collaborate with my team in real-time?",
-          answer: "Yes! Whimsical supports real-time collaboration, allowing multiple team members to work on the same document simultaneously with live cursors and instant updates."
+          question: "Do I need to pay to be part of it?",
+
+          answer: "Nope. Nothing. UNNATI 5.0 is completely free for all participants.",
+
         },
         {
-          question: "What types of diagrams can I create?",
-          answer: "You can create flowcharts, wireframes, mind maps, organizational charts, user flows, system diagrams, and many other types of visual documents."
+          question: "Is it happening online or offline?",
+
+          answer: "Both the rounds are offline at AIT campus.",
+
+
         },
         {
-          question: "Is there a free plan available?",
-          answer: "Yes, we offer a free plan that includes basic features and a limited number of documents. Paid plans unlock unlimited documents and advanced features."
+          question: "What kind of problem statements can we expect?",
+
+          answer: "Exciting real-world challenges spanning technology, sustainability, social impact, and innovation. The problem statements are designed to test both creativity and technical skills.",
+
         },
         {
-          question: "How do I share my work with others?",
-          answer: "You can share documents via direct links, invite collaborators by email, or export your work in various formats including PNG, PDF, and SVG."
+          question: "How many members can be there in a team?",
+
+          answer: "You can make a team of 2 to 4 members.",
+
         },
       ]
 

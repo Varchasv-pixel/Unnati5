@@ -150,8 +150,8 @@ function Hero() {
   return (
     <div className='flex bganimation flex-col justify-center items-center gap-y-20 mt-21 pt-18 md:mt-40 md:pt-25 lg:mt-20 lg:pt-37 pb-8 overflow-x-hidden' ref={divRef} style={{borderTopLeftRadius: '100%', borderTopRightRadius: '100%', width: '85%'}}>
       <div className='flex flex-col justify-center items-center text-center text-white gap-y-8'>
-        <p className='font-primary font-bold text-[clamp(1.5rem,6.1vw,4rem)]'>The all-in-one <br /> workspace you'll love</p>
-        <p className='leading-0 text-[1rem]'>Think it. Plan it. Build it. without switching apps</p>
+        <p className='font-primary font-bold text-[clamp(1.5rem,6.1vw,4rem)]'>Unnati<br /> Edition 5.0</p>
+        <p className='leading-0 text-[1rem]'>Journey from Thought to Triumph</p>
         
         <Link to={'/form'}><Primarybtn/></Link>
       </div>
@@ -240,4 +240,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero ;
