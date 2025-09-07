@@ -92,14 +92,14 @@ function NewWay() {
             >
                 <div ref={textRef} className='relative z-10 text-center'>
                     <h2 className='text-4xl font-bold text-gray-800 mb-4'>
-                        Escape the clutter
+                        Escape the Matrix 
                     </h2>
                 </div>
                 
                 <div className='new-content absolute inset-0 flex flex-col lg:flex-row items-start  sm:justify-center lg:justify-center lg:items-center sm:gap-x-26 sm:items-center justify-center text-center z-10 opacity-0 px-12'>
                     <div className='   flex items-center justify-center'>
                         <h1 className='main-title text-left text-5xl md:text-7xl   font-bold text-gray-800 mb-8 md:mb-0'>
-                            Life When You <br /> Participate in <br /> <span className="text-white">UNNATI </span>
+                           Why should you  <br /> Participate in <br /> <span className="text-white">UNNATI ? </span>
                         </h1>
                     </div>
                     

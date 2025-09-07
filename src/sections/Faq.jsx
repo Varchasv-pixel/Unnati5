@@ -158,7 +158,7 @@
                 Frequently Asked <br /> Questions
               </h2>
               <p className='font-secondary text-[#6a5b72] text-xl max-w-2xl mx-auto'>
-                Everything you need to know about Whimsical and how it can help your team think better together.
+                Have questions ? Find answers to the most commonly asked questions below ? 
               </p>
             </div>
 
@@ -223,7 +223,7 @@
                       </h3>
                       
                       <p className='text-white font-secondary font-medium mb-10 leading-relaxed text-xl max-w-md mx-auto'>
-                        Can't find the answer you're looking for? Our support team is here to help you get the most out of Whimsical.
+                        Can't find the answers you're looking for? Reach out to our team for further assistence.
                       </p>
                       
                       <button className='bg-white text-purple-700 font-semibold px-10 py-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg'>

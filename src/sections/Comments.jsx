@@ -153,7 +153,7 @@ function Comments() {
   return (
     <div className='flex flex-col py-16 px-4 md:gap-y-18 max-w-screen'>
       <div className='flex flex-col text-left gap-y-3 w-[90vw] md:px-20 mb-12'>
-        <p className='font-primary font-bold text-nowrap  text-[#250835] text-[clamp(50px,13.5vw,11.25rem)] leading-[95%]'>Great minds <br /> think here</p>
+        <p className='font-primary font-bold text-nowrap  text-[#250835] text-[clamp(50px,13.5vw,11.25rem)] leading-[95%]'>Testimonials</p>
         <p className='font-secondary ml-3 md:ml-24 lg:ml-41 text-[1.5rem] text-[#6a5b72] font-medium'>Winning teams run <br /> on Whimsical.</p>  
       </div>
       
@@ -257,4 +257,4 @@ function Comments() {
   )
 }
 
-export default Comments
+export default Comments ; 

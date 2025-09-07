@@ -10,7 +10,7 @@ function Footer() {
 
         <main className="hero-section">
             <div className="hero-content">
-                <h1>It's time to work <br/>differently.</h1>
+                <h1>It's time to think <br/>differently.</h1>
                 <a href="#" className="cta-button">
                     Get started free
                     <span className="arrow">→</span>
